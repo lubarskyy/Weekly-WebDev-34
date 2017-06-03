@@ -1,0 +1,203 @@
+@import 'reset';
+@import 'variables';
+
+.main-width {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  height: 150px;
+  background-color: #fff;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    // margin-top: 58px;
+    // margin-right: 20px;
+  }
+  &__title {
+    font-family: $second-font;
+    font-size: 1.9rem;
+    color: $primary-color;
+    // margin-top: 58px;
+    &--bold {
+    font-weight: 800;
+    }
+  }
+  &__separator {
+    background-color: #ebebeb;
+    width: 1px;
+    height: 150px;
+    margin-right: 50px;
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  // margin: 67px 4px 0 95px;
+  &__item {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $main-font;
+    font-size: 1rem;
+    color: $primary-color;
+    margin-right: 40px;
+  }
+  &__item:hover {
+    font-weight: 600;
+    color: $secondary-color;
+  }
+}
+
+.contact {
+  // margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80px;
+  &__info {
+    font-family: $main-font;
+    font-size: .75rem;
+    font-weight: 600;
+    color: $primary-color;
+    // margin-bottom: 22px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button {
+    font-family: $main-font;
+    font-size: .9rem;
+    font-weight: 600;
+    color: $primary-color;
+    background-color: $secondary-color;
+    border: none;
+    width: 122px;
+    height: 41px;
+  }
+  &__separator {
+    width: 1px;
+    height: 34px;
+    background-color: #babbc4;
+    // margin: 3.5px 20px;
+  }
+  &__phone {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+.splash {
+  height: 795px;
+  background-image: url(../images/main.png);
+  background-size: cover;
+  background-position: center;
+  &::before {
+    content: '';
+    background-color: rgba(0, 0, 0, .33);
+    position: absolute;
+    height: 795px;
+    width: 100%;
+    z-index: 1;
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  &__title {
+    font-family: $second-font;
+    font-size: 3.5rem;
+    color: #fff;
+    margin-top: 235px;
+  }
+  &__description {
+    font-family: $main-font;
+    font-size: 1.9rem;
+    color: #fff;
+    margin: 44px 0 60px 0;
+    word-spacing: 1rem;
+  }
+  &__icon {
+    width: 100px;
+  }
+}
+
+.form {
+  width: 570px;
+  height: 90px;
+  margin-top: 60px;
+  background-color: #dddddd;
+  display: flex;
+  &__input {
+    width: 273px;
+    height: 54px;
+    margin: 18px 0 18px 17px;
+    border: none;
+    padding-left: 23px;
+    font-family: $main-font;
+    font-size: 1.1rem;
+    color: #000;
+  }
+  &__select {
+    width: 108px;
+    height: 54px;
+    margin: 18px 0;
+    border-right: 2px solid #fff;
+    background-color: $secondary-color;
+    background-image: url(../images/arrow.png);
+    background-position: 95%;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    .form__options {
+      background: transparent;
+      appearance: none;
+      width: 108px;
+      height: 54px;
+      border: none;
+      outline: none;
+      font-family: $main-font;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #000;
+      padding-left: 23px;
+    }
+  }
+  &__button {
+    width: 155px;
+    height: 54px;
+    margin: 18px 0;
+    border: none;
+    background-color: $secondary-color;
+    font-family: $main-font;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+.services {
+  height: 655px;
+  display: flex;
+  &__block {
+    width: 50%;
+    height: inherit;
+    background-color: $primary-color;
+    &--right-side {
+      background-color: $secondary-color;
+    }
+  }
+}
