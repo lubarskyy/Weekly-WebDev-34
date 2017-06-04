@@ -417,3 +417,73 @@
     border: 4px solid #fff;
   }
 }
+
+.footer {
+  height: 655px;
+  background-color: #363855;
+  background-image: url(../images/world-map.png);
+  background-repeat: no-repeat;
+  background-position: 22%;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    position: relative;
+  }
+  &__location {
+    display: flex;
+    justify-content: space-between;
+    font-family: $main-font;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 24px;
+    color: #fff;
+    width: 20%;
+    position: absolute;
+    bottom: 250px;
+    left: 620px;
+  }
+  &__pin {
+
+  }
+  &__address {
+    
+  }
+  &__side-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 70%;
+    font-family: $main-font;
+    color: #fff;
+  }
+  &__header {
+
+  }
+  &__nav {
+    &-item {
+
+    }
+  }
+  &__social {
+    color: $secondary-color;
+  }
+  &__back-to-top {
+
+  }
+  &__copyrights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    font-family: $main-font;
+    font-size: 0.9em;
+    color: #fff;
+  }
+  &__icon {
+    height: 30px;
+    transform: rotate(-15deg);
+  }
+}
