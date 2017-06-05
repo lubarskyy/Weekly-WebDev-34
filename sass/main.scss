@@ -145,7 +145,7 @@
   }
 }
 
-@keyframes test {
+@keyframes bounce {
   0% {
     background-position: 95% 30%;
   }
@@ -181,12 +181,7 @@
     background-position: 95%;
     background-size: 30%;
     background-repeat: no-repeat;
-
-    animation-name: test;
-    animation-duration: .5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
+    animation: bounce .5s infinite ease-in-out alternate;
     .form__options {
       background: transparent;
       appearance: none;
@@ -225,7 +220,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s ease;
+    transition: all .7s ease;
     &--left {
       background-color: $primary-color;
       &:hover .services__dotcom{
@@ -262,6 +257,7 @@
     color: #000;
     user-select: none;
     cursor: default;
+    transition: all 0.5s ease;
   }
   &__title {
     font-size: 2.25em;
@@ -279,8 +275,8 @@
     border: 2px solid #fff;
     color: #fff;
     font-size: 1.1em;
-    transition: all 0.4s ease;
     outline: none;
+    transition: all 0.4s ease;
     &:hover {
       background-color: $secondary-color;
       color: $primary-color;
@@ -388,6 +384,14 @@
   display: flex;
   justify-content: space-between;
   width: 65%;
+  &__logo {
+    transition: all .7s ease;
+    &:hover {
+      transform: scale(1.2);
+      margin: 0 20px;
+      box-shadow: 5px 10px 5px #888888;
+    }
+  }
 }
 
 .comment {
@@ -399,6 +403,14 @@
   width: 370px;
   background-color: #faf9f9;
   padding: 20px;
+  transition: all .7s ease;
+  &:hover {
+    transform: scale(1.1);
+    margin: 0 20px;
+    box-shadow: 5px 10px 5px #888888;
+    background-color: $primary-color;
+    color: #fff;
+  }
   &__content {
     font-family: $second-font;
     font-style: italic;
@@ -452,6 +464,13 @@
     color: $primary-color;
     background-color: $secondary-color;
     border: 4px solid #fff;
+    outline: none;
+    transition: all 0.4s ease;
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -506,6 +525,10 @@
     &-li {
       padding: 10px 0 10px 10px;
       border-bottom: 1px solid #565870;
+      transition: all 0.7s ease;
+      &:hover {
+        border-bottom: 1px solid $secondary-color;
+      }
     }
     &-item {
       color: #fff;
@@ -539,3 +562,8 @@
     transform: rotate(-15deg);
   }
 }
+
+@import 'mq/mobile-small';
+@import 'mq/mobile';
+@import 'mq/tablet';
+@import 'mq/desktop-small';

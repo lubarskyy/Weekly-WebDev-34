@@ -6,31 +6,28 @@ $(document).ready(function(){
     }, 1500);
   });
 
-  $(window).scroll(function() {
-    let radius = $(window).scrollTop() / 90;
-    $('.splash__icon').css({ transform: 'rotate(' + radius + 'rad)' });
-  });
+  const services = $('.services').children();
 
-  $( $('.services').children()[1] ).on('mouseenter', function(){
+  $(services[1]).on('mouseenter', function(){
 
-    if( $( $('.services').children()[1] ).hasClass('services__block--right') ){
+    if( $(services[1]).hasClass('services__block--right') ){
 
-      $( $('.services').children()[1] ).removeClass('services__block--right');
-      $( $('.services').children()[1] ).addClass('services__block--left');
-      $( $('.services').children()[0] ).removeClass('services__block--left');
-      $( $('.services').children()[0] ).addClass('services__block--right');
+      $(services[1]).removeClass('services__block--right');
+      $(services[1]).addClass('services__block--left');
+      $(services[0]).removeClass('services__block--left');
+      $(services[0]).addClass('services__block--right');
 
     };
   });
 
-  $( $('.services').children()[0] ).on('mouseenter', function(){
+  $(services[0]).on('mouseenter', function(){
 
-    if( $( $('.services').children()[0] ).hasClass('services__block--right') ){
+    if( $(services[0]).hasClass('services__block--right') ){
 
-      $( $('.services').children()[0] ).removeClass('services__block--right');
-      $( $('.services').children()[0] ).addClass('services__block--left');
-      $( $('.services').children()[1] ).removeClass('services__block--left');
-      $( $('.services').children()[1] ).addClass('services__block--right');
+      $(services[0]).removeClass('services__block--right');
+      $(services[0]).addClass('services__block--left');
+      $(services[1]).removeClass('services__block--left');
+      $(services[1]).addClass('services__block--right');
 
     };
   });
