@@ -427,7 +427,6 @@
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     height: 100%;
     position: relative;
   }
@@ -448,36 +447,51 @@
 
   }
   &__address {
-    
+
   }
   &__side-panel {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    height: 70%;
+    height: 60%;
+    margin-top: 100px;
     font-family: $main-font;
     color: #fff;
   }
   &__header {
-
+    font-size: 1.1em;
+    font-weight: 600;
   }
   &__nav {
+    list-style-type: none;
+    text-align: right;
+    margin: 35px 0 45px 0;
+    &-li {
+      padding: 10px 0 10px 10px;
+      border-bottom: 1px solid #565870;
+    }
     &-item {
-
+      color: #fff;
+      text-decoration: none;
     }
   }
   &__social {
-    color: $secondary-color;
+    color: #ffe13e;
+    margin-bottom: 70px;
+    width: 7%;
+    display: flex;
+    justify-content: space-between;
   }
   &__back-to-top {
-
+    font-size: 0.75em;
   }
   &__copyrights {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 10%;
+    margin-top: 30px;
     font-family: $main-font;
     font-size: 0.9em;
     color: #fff;
