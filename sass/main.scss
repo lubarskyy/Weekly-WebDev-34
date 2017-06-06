@@ -15,26 +15,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 95%;
+    height: 100%;
   }
   &__logo {
-    // margin-top: 58px;
-    // margin-right: 20px;
   }
   &__title {
     font-family: $second-font;
     font-size: 1.9rem;
     color: $primary-color;
     margin: 0 40px 0 -20px;
-    // margin-top: 58px;
     &--bold {
     font-weight: 800;
     }
-  }
-  &__separator {
-    background-color: #ebebeb;
-    width: 1px;
-    height: 150px;
-    margin-right: 50px;
   }
 }
 
@@ -60,9 +53,18 @@
 .contact {
   // margin-top: 35px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
-  height: 80px;
+  justify-content: center;
+  // height: 80px;
+  height: 100%;
+  &::before {
+    content: '';
+    background-color: #ebebeb;
+    width: 1px;
+    height: 150px;
+    margin-right: 50px;
+  }
   &__info {
     font-family: $main-font;
     font-size: .75rem;
@@ -74,6 +76,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
   }
   &__button {
     font-family: $main-font;
@@ -155,7 +158,8 @@
 }
 
 .form {
-  width: 570px;
+  // width: 570px;
+  width: 49%;
   height: 90px;
   margin-top: 60px;
   background-color: #dddddd;
@@ -400,7 +404,8 @@
   justify-content: space-around;
   position: relative;
   height: 180px;
-  width: 370px;
+  // width: 370px;
+  width: 31.5%;
   background-color: #faf9f9;
   padding: 20px;
   transition: all .7s ease;
