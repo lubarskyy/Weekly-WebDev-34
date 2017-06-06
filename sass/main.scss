@@ -19,12 +19,14 @@
     height: 100%;
   }
   &__logo {
+    display: flex;
+    text-decoration: none;
   }
   &__title {
     font-family: $second-font;
     font-size: 1.9rem;
     color: $primary-color;
-    margin: 0 40px 0 -20px;
+    margin: 0 40px 0 10px;
     &--bold {
     font-weight: 800;
     }
@@ -219,6 +221,7 @@
 .services {
   height: 655px;
   display: flex;
+  flex-wrap: wrap;
   &__block {
     width: 50%;
     display: flex;

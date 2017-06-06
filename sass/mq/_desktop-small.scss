@@ -1,0 +1,81 @@
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .main-width {
+    max-width: 1024px;
+  }
+
+  .header {
+    &__content {
+      width: 100%;
+      justify-content: space-around;
+    }
+    &__title {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .contact {
+    &::before {
+      display: none;
+    }
+  }
+
+  .form {
+    width: 55%;
+  }
+
+  .services {
+    height: 655px;
+    &__block {
+      width: 50%;
+    }
+    &__content {
+      width: 80%;
+      height: 100%;
+      &--left {
+        margin: 0;
+      }
+      &--right {
+        margin: 0;
+      }
+    }
+  }
+
+  .features {
+    background-position: -60%;
+  }
+
+  .testimonial {
+    &__clients {
+      justify-content: space-around;
+    }
+    &__comments {
+      justify-content: space-around;
+    }
+  }
+
+  .companies {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 40%;
+    &__logo {
+      margin-bottom: 15px;
+      &:hover {
+        transform: scale(1.1);
+        margin: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .footer {
+    &__location {
+      width: auto;
+      left: 660px;
+    }
+    &__side-panel {
+      margin-right: 20px;
+    }
+  }
+
+}
