@@ -6,18 +6,24 @@
 
   .header {
     &__content {
-      justify-content: center;
+      width: 100%;
+      justify-content: space-around;
     }
     &__title {
       margin: 0 0 0 10px;
     }
-    &__separator {
-      display: none;
-    }
   }
 
   .menu {
-    display: none;
+    li {
+      margin-top: 5px;
+    }
+    flex-direction: column;
+    text-align: right;
+    &__item {
+      margin-top: 10px;
+      margin-right: 0;
+    }
   }
 
   .contact {
@@ -67,6 +73,7 @@
 
   .features {
     height: 100%;
+    background-image: none;
     &__header {
       margin: 45px 0;
     }
@@ -101,7 +108,8 @@
   }
 
   .companies {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: auto;
     &__logo {
       margin-bottom: 15px;
