@@ -29,8 +29,6 @@
   }
 
   .services {
-    flex-wrap: wrap;
-    // height: 100%;
     height: 1100px;
     &__block {
       width: 100%;
@@ -55,7 +53,6 @@
     }
     &__highlights {
       width: 100%;
-      flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
     }
@@ -87,7 +84,6 @@
   }
 
   .companies {
-    flex-wrap: wrap;
     justify-content: space-around;
     width: auto;
     &__logo {

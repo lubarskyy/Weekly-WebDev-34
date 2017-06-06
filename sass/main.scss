@@ -160,12 +160,12 @@
 }
 
 .form {
-  // width: 570px;
   width: 49%;
   height: 90px;
   margin-top: 60px;
   background-color: #dddddd;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   &__input {
@@ -322,6 +322,7 @@
   }
   &__highlights {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     height: 50%;
   }
@@ -389,6 +390,7 @@
 
 .companies {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 65%;
   &__logo {
@@ -549,6 +551,12 @@
     width: 7%;
     display: flex;
     justify-content: space-between;
+    &-icon {
+      transition: all 0.4s ease;
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
   }
   &__back-to-top {
     cursor: pointer;
