@@ -1,5 +1,5 @@
 # Info
-As this week exercise I created this fully responsive site based on PSD file. 
+As this Weekly WebDev exercise I created this responsive site based on PSD file. 
 
 Live demo - https://lubarskyy.github.io/Weekly-WebDev-34/
 

@@ -36,7 +36,6 @@
 .menu {
   display: flex;
   list-style: none;
-  // margin: 67px 4px 0 95px;
   &__item {
     text-transform: uppercase;
     text-decoration: none;
@@ -53,7 +52,6 @@
 }
 
 .contact {
-  // margin-top: 35px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -72,7 +70,6 @@
     font-size: .75rem;
     font-weight: 600;
     color: $primary-color;
-    // margin-bottom: 22px;
   }
   &__bottom {
     display: flex;
@@ -89,11 +86,15 @@
     border: none;
     width: 122px;
     height: 41px;
+    outline: none;
     transition: all 0.4s ease;
     &:hover {
       color: #fff;
       background-color: $primary-color;
       transform: scale(1.1);
+    }
+    &:active {
+      border: 1px solid $secondary-color;
     }
   }
   &__separator {
@@ -187,7 +188,9 @@
     background-position: 95%;
     background-size: 30%;
     background-repeat: no-repeat;
-    animation: bounce .5s infinite ease-in-out alternate;
+    &:hover {
+      animation: bounce .5s infinite ease-in-out alternate;
+    }
     .form__options {
       background: transparent;
       appearance: none;
@@ -211,9 +214,13 @@
     font-size: .9rem;
     font-weight: 700;
     color: #fff;
+    outline: none;
     transition: all 0.4s ease;
     &:hover {
       background-color: $primary-color;
+    }
+    &:active {
+      border: 1px solid $secondary-color;
     }
   }
 }
@@ -288,6 +295,9 @@
       background-color: $secondary-color;
       color: $primary-color;
       transform: scale(1.1);
+    }
+    &:active {
+      border: 1px solid $primary-color;
     }
   }
 }
@@ -409,7 +419,6 @@
   justify-content: space-around;
   position: relative;
   height: 180px;
-  // width: 370px;
   width: 31.5%;
   background-color: #faf9f9;
   padding: 20px;
@@ -480,6 +489,9 @@
       background-color: transparent;
       color: #fff;
       transform: scale(1.1);
+    }
+    &:active {
+      border: none;
     }
   }
 }
