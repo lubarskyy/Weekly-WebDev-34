@@ -54,7 +54,7 @@
       width: 100%;
     }
     &__content {
-      width: 100%;
+      width: 80%;
       height: 100%;
       &--left {
         margin: 0;
@@ -102,14 +102,25 @@
 
   .companies {
     flex-direction: column;
+    width: auto;
     &__logo {
       margin-bottom: 15px;
+      &:hover {
+        transform: scale(1.1);
+        margin: 15px 0;
+        box-shadow: none;
+      }
     }
   }
 
   .comment {
     width: 100%;
     margin-bottom: 55px;
+    &:hover {
+      transform: none;
+      margin: 0 0 55px 0;
+      box-shadow: none;
+    }
   }
 
   .pricing {
