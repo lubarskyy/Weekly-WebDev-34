@@ -1,6 +1,10 @@
 @import 'reset';
 @import 'variables';
 
+html {
+  font-family: $main-font;
+}
+
 .main-width {
   max-width: 1170px;
   width: 100%;
@@ -39,7 +43,6 @@
   &__item {
     text-transform: uppercase;
     text-decoration: none;
-    font-family: $main-font;
     font-size: 1rem;
     color: $primary-color;
     margin-right: 40px;
@@ -56,7 +59,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  // height: 80px;
   height: 100%;
   &::before {
     content: '';
@@ -66,7 +68,6 @@
     margin-right: 50px;
   }
   &__info {
-    font-family: $main-font;
     font-size: .75rem;
     font-weight: 600;
     color: $primary-color;
@@ -119,9 +120,9 @@
   &::before {
     content: '';
     background-color: rgba(0, 0, 0, .33);
-    position: absolute;
     height: 795px;
     width: 100%;
+    position: absolute;
     z-index: 1;
   }
   &__content {
@@ -129,9 +130,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     position: relative;
     z-index: 2;
-    text-align: center;
   }
   &__title {
     font-family: $second-font;
@@ -140,14 +141,16 @@
     margin-top: 235px;
   }
   &__description {
-    font-family: $main-font;
     font-size: 1.9rem;
+    word-spacing: 1rem;
     color: #fff;
     margin: 44px 0 60px 0;
-    word-spacing: 1rem;
   }
   &__icon {
-    width: 100px;
+    width: 110px;
+    height: 110px;
+    background-image: url(../images/atom.png);
+    background-repeat: no-repeat;
   }
 }
 
@@ -198,11 +201,11 @@
       height: 54px;
       border: none;
       outline: none;
+      padding-left: 23px;
       font-family: $main-font;
       font-size: 1.1rem;
       font-weight: 700;
       color: #000;
-      padding-left: 23px;
     }
   }
   &__button {
@@ -253,7 +256,6 @@
     justify-content: space-around;
     align-items: center;
     color: #fff;
-    font-family: $main-font;
     text-align: center;
     &--left {
       margin-right: -60px;
@@ -266,7 +268,7 @@
     width: 168px;
   }
   &__dotcom {
-    font-size: 8.3em;
+    font-size: 8.3rem;
     font-weight: 600;
     color: #000;
     user-select: none;
@@ -274,11 +276,11 @@
     transition: all 0.5s ease;
   }
   &__title {
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: 600;
   }
   &__description {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     line-height: 24px;
     margin-top: -40px;
   }
@@ -287,9 +289,9 @@
     height: 60px;
     background: transparent;
     border: 2px solid #fff;
-    color: #fff;
-    font-size: 1.1em;
     outline: none;
+    color: #fff;
+    font-size: 1.1rem;
     transition: all 0.4s ease;
     &:hover {
       background-color: $secondary-color;
@@ -323,10 +325,9 @@
     margin: 75px 0;
   }
   &__title {
-    font-family: $main-font;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     &--big {
-      font-size: 3em;
+      font-size: 3rem;
       font-weight: 600;
     }
   }
@@ -351,12 +352,11 @@
   }
   &__title {
     font-family: $second-font;
-    font-size: 1.9em;
+    font-size: 1.9rem;
     color: #f4d320;
   }
   &__description {
-    font-family: $main-font;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     line-height: 24px;
   }
 }
@@ -387,9 +387,8 @@
   justify-content: space-between;
   width: 30%;
   height: 45%;
-  font-family: $main-font;
   &__header {
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: 600;
   }
   &__description {
@@ -433,12 +432,11 @@
   &__content {
     font-family: $second-font;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     line-height: 24px;
     color: #a4a4a4;
   }
   &__author {
-    font-family: $main-font;
     font-weight: 600;
   }
   &__image {
@@ -462,16 +460,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: $main-font;
     height: 30%;
   }
   &__title {
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: 600;
     color: #fff;
   }
   &__info {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: #67687b;
   }
   &__button {
@@ -479,7 +476,7 @@
     height: 90px;
     font-family: $main-font;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: $primary-color;
     background-color: $secondary-color;
     border: 4px solid #fff;
@@ -511,8 +508,7 @@
   &__location {
     display: flex;
     justify-content: space-between;
-    font-family: $main-font;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: 600;
     line-height: 24px;
     color: #fff;
@@ -533,11 +529,10 @@
     align-items: flex-end;
     height: 60%;
     margin-top: 100px;
-    font-family: $main-font;
     color: #fff;
   }
   &__header {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: 600;
   }
   &__nav {
@@ -572,7 +567,7 @@
   }
   &__back-to-top {
     cursor: pointer;
-    font-size: 0.75em;
+    font-size: 0.75rem;
   }
   &__copyrights {
     display: flex;
@@ -581,7 +576,6 @@
     justify-content: space-around;
     height: 10%;
     margin-top: 30px;
-    font-family: $main-font;
     font-size: 0.9em;
     color: #fff;
   }
@@ -593,4 +587,5 @@
 
 @import 'mq/mobile';
 @import 'mq/tablet';
+@import 'mq/landscape';
 @import 'mq/desktop-small';
